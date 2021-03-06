@@ -10,6 +10,7 @@ Welcome to osre_doc's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   Introduction
 
 
 Indices and tables
