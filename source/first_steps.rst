@@ -31,7 +31,8 @@ To get started you need to create a folder for your app andd add a CMakeLists.tx
 
 ::
 
-The code:
+Prepare the code
+----------------
 
 ::
 
