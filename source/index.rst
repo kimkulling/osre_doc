@@ -11,6 +11,7 @@ Welcome to osre_doc's documentation!
    :caption: Contents:
 
    Introduction
+   first_steps
 
 
 Indices and tables
