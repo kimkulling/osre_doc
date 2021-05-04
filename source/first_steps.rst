@@ -33,6 +33,7 @@ To get started you need to create a folder for your app andd add a CMakeLists.tx
 
 Prepare the code
 ----------------
+Here the code:
 
 ::
 
