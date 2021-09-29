@@ -12,6 +12,8 @@ Welcome to osre_doc's documentation!
 
    Introduction
    first_steps
+   event_system
+   Render_system
 
 
 Indices and tables
