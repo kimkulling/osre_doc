@@ -44,6 +44,7 @@ window or you want to add a new mesh to the scene you have to do this via the Re
 To work with this you have to configure it and open the access to it:
 
 ::
+
        auto *rbService = new RenderBackendService();
        rbService->setSettings(mySettings, false);
        if (!m_rbService->open()) {
