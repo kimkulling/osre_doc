@@ -54,28 +54,6 @@ To work with this you have to configure it and open the access to it:
 
 Render-API's
 ============
-
-
-
-
-Installation Prerequisites
---------------------------
-You need to install the following packages:
-
- * git
- * CMake Version 3.1 or higher
- * For Windows: Visual-Studio 2017 or 2019
- * For Linux: gcc or clang
-
-Build for Windows
------------------
- * Open a command-prompt
- * Checkout the code via 
-   > git clone https://github.com/kimkulling/osre.git
- * Navigate into your folder with the OSRE-Repository 
- * Generate the project-siles via cmake:
-   > cmake CMakeLists.txt
- * Open the solution osre.sln with the VS or build OSRE via
-   > cmake --build .
- * You will find the samples and tests at 
-   > ose\bin\Debug
+At this moment the following render-backends are implemented:
+* OpenGL
+* Vulkan (in progress)
