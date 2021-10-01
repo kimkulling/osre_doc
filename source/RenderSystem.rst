@@ -1,11 +1,6 @@
 
 .. _osre_render_system:
 
-Introduction
-============
-The OSRE was written as a playground for me to learn more about graphics-programming in a multi-threaded environment. It was hard for me
-to understand which concepts are the right one to build a render-backend in its separate thread from scratch. 
-
 Basic concepts's
 ================
 
