@@ -11,9 +11,9 @@ Welcome to osre_doc's documentation!
    :caption: Contents:
 
    Build
-   first_steps
-   event_system
-   Render_system
+   FirstSteps
+   EventSystem
+   RenderSystem
 
 
 Indices and tables
