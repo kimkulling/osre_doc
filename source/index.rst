@@ -10,7 +10,7 @@ Welcome to osre_doc's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   Introduction
+   Build
    first_steps
    event_system
    Render_system
