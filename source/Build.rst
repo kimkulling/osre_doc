@@ -9,10 +9,10 @@ Build
 
 Installation Prerequisites
 --------------------------
-You need to install the following packages:
+At first you have to install the following packages:
 
  * git
- * CMake Version 3.1 or higher
+ * CMake Version 3.10 or higher
  * For Windows: Visual-Studio 2017 or 2019
  * For Linux: gcc or clang
 
@@ -21,14 +21,22 @@ Build for Windows
  * Open a command-prompt
  * Checkout the code via 
    > git clone https://github.com/kimkulling/osre.git
- * Navigate into your folder with the OSRE-Repository 
- * Generate the project-siles via cmake:
+ * Navigate into your folder which contains the OSRE-Repository 
+ * We are using a cmake-based build to generate the build files. to generate your project-files for your Build Environment via:
    > cmake CMakeLists.txt
- * Open the solution osre.sln with the VS or build OSRE via
+   - If you want to use a different environment like eclipe or CLion you can generate them as well:
+     > cmake CMakeLists.txt -G <Your IDE> 
+   - You can get the list of generators via:
+     > cmake --help
+ * If you have select the VS-Generator open the solution osre.sln with Visual-Studio or build OSRE via
    > cmake --build .
  * You will find the samples and tests at 
-   > ose\bin\Debug
-   
+   > osre\bin\Debug
+ * To run the samples you have to copy the dlls from SDL2 and assimp into your bin-folder:
+   > cd osre\bin\debug
+   > copy ..\..\contrib\assimp\bin\debug\*dll .
+   > copy <SDL2-Folder>\libs\x64\*dll .
+   - This is an open issue which will get fixed as soon as possible.
 
 Build for Linux
 ---------------
@@ -40,4 +48,3 @@ Build for Linux
    > cmake --build .
  * You will find the samples and tests at 
    > ose/bin
-
