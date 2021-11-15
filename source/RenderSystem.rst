@@ -4,6 +4,12 @@
 Render System
 =============
 
+The Render-Graph:
+-----------------
+
+.. raw:: html
+    :file: images/OSRERenderGraph.svg
+    
 Multithreaded rendering
 -----------------------
 
