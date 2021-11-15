@@ -4,8 +4,8 @@
 Render System
 =============
 
-The Render-Graph:
------------------
+The Render-Graph
+----------------
 
 .. raw:: html
     :file: images/OSRERenderGraph.svg
