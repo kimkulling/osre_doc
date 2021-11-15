@@ -4,14 +4,22 @@
 Render System
 =============
 
+Multithreaded rendering
+-----------------------
+The rendering will be done in a separate render-thread. 
+
 The Render-Graph
 ----------------
-
+The rendering is managed by a render-graph:
+- In each frame all the passes were iterated
+- For each pass all the render-batches will be iterated
+  - A batch iteration will set the uniform parameter
+  - A batch iteration will set the material
+  - A batch iteration will do all render calls.
+  
 .. raw:: html
     :file: images/OSRERenderGraph.svg
     
-Multithreaded rendering
------------------------
 
 ToDo!
 
