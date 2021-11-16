@@ -17,10 +17,10 @@ The rendering is managed by a render-graph:
   - A batch iteration will set the material
   - A batch iteration will do all render calls.
   
+It look like:
+  
 .. image:: images/OSRERenderGraph.svg
     
-
-ToDo!
 
 Render-Backend-Service
 ----------------------
