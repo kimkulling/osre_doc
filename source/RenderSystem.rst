@@ -11,7 +11,8 @@ must share the time to get their tasks done like:
 - Input handling
 - User interaction
 - Scene-updates
-- And, last but to least - the rendering itself
+- And, last but to least, the rendering itself
+
 So when you want to get a frame rate from 60 you have to work in a timeframe from 1/60 -> 1.67ms. Not too much.
 To encouble this a little bit I the OSRE-Rendering will be done in a separate render-thread. Each update will be done 
 one frame before.
