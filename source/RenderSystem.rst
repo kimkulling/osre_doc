@@ -1,8 +1,8 @@
 
 .. _osre_render_system:
 
-Render System
-=============
+The Render System
+=================
 
 Multithreaded rendering
 -----------------------
