@@ -8,6 +8,7 @@ Multithreaded rendering - The idea
 ----------------------------------
 In classic engines the rendering and the game logic will be done in the same thread: the main thread. So all the logic 
 must share the time to get their tasks done like:
+
 - Input handling
 - User interaction
 - Scene-updates
