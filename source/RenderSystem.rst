@@ -4,9 +4,22 @@
 The Render System
 =================
 
-Multithreaded rendering
------------------------
-The rendering will be done in a separate render-thread. 
+Multithreaded rendering - The idea
+----------------------------------
+In classic engines the rendering and the game logic will be done in the same thread - the main thread. So all the logic 
+must share the time to get their tasks done like:
+- Input handling
+- User interaction
+- Scene-updates
+- And, last but to least - the rendering itself
+So when you want to get a frame rate from 60 you have to work in a timeframe from 1/60 -> 1.67ms. Not too much.
+To encouble this a little bit I the OSRE-Rendering will be done in a separate render-thread. Each update will be done 
+one frame before.
+This helps to get the render logic encapsulated from the rest and get more resources for a smooth render experience.
+Of course new render-API's will be able to instrument multible threads for the rendering. To implement this logic 
+a separate render-thread is an advantage as well. There is only one place where you have to look at.
+All the rendering will be managed in a separate task. The main-thread can communicate with the back-end aka the render-thread
+about the Render-system.
 
 The Render-Graph
 ----------------
