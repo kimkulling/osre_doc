@@ -1,11 +1,8 @@
 .. _osre_introduction_cpp:
 
-************
-Introduction
-************
-
+*****
 Build
-=====
+*****
 
 Installation Prerequisites
 --------------------------
