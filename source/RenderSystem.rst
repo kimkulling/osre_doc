@@ -81,8 +81,8 @@ To work with this you have to configure it and open the access to it:
        }
 ::
 
-Render-API's
-============
+Supported Render-API's
+----------------------
 At this moment the following render-backends are implemented:
 
 * OpenGL
