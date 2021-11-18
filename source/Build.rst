@@ -5,10 +5,10 @@ Introduction
 
 
 Build
-============
+-----
 
 Installation Prerequisites
---------------------------
+****************************************************
 At first you have to install the following packages:
  * git
  * CMake Version 3.10 or higher
@@ -16,7 +16,7 @@ At first you have to install the following packages:
  * For Linux: gcc or clang
 
 Build for Windows
------------------
+**********************************
  * Open a command-prompt
  * Checkout the code via::
  
@@ -47,7 +47,7 @@ Build for Windows
    - This is an open issue which will get fixed as soon as possible.
 
 Build for Linux
----------------
+******************************
  * Open a terminal
  * Checkout the code via::
  
