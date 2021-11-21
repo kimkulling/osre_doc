@@ -17,6 +17,7 @@ The OSRE-Documentation
    PlatformAbstraction
    EventSystem
    RenderSystem
+   Scene
 
 
 Indices and tables
