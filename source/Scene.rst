@@ -17,10 +17,12 @@ Nodes and more
 --------------
 So how can we describe the scene by using a tree. OSRE is using nodes. Each node can have one single parent node and a couple of children nodes:
 
+```
 class Node {
     Node mParent;
     ::CPPCore::TArray<Node*> mChildren;
 };
+```
 
 Culling and Picking
 -------------------
