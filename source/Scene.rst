@@ -2,8 +2,8 @@
 The Scene
 #########
 
-The hierarchitacl Representation
----------------------------------
+The hierarchical Representation
+-------------------------------
 If you want to build a virtal model of the world you can use trees. If you want to create a table with a glass staing on it you can model this like:
 - The floor where is the table stands on is the root-node
 - On the floor there is the table. So the table is a child of the floow-
@@ -15,6 +15,12 @@ from your scnene gan hekp you: you just need to traverse all children from the f
 
 Nodes and more
 --------------
+So how can we describe the scene by using a tree. OSRE is using nodes. Each node can have one single parent node and a couple of children nodes:
+
+class Node {
+    Node mParent;
+    ::CPPCore::TArray<Node*> mChildren;
+};
 
 Culling and Picking
 -------------------
