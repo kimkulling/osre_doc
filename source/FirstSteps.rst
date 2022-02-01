@@ -15,7 +15,7 @@ To get started you need to create a folder for your app andd add a CMakeLists.tx
 
     SET ( 00_helloworld_src
       00_HelloWorld/HelloWorld.cpp
-	    00_HelloWorld/README.md
+      00_HelloWorld/README.md
     )
 
     ADD_EXECUTABLE( HelloWorld
@@ -31,7 +31,7 @@ To get started you need to create a folder for your app andd add a CMakeLists.tx
 
 ::
 
-Prepare the code
+The h
 ----------------
 Here the code:
 
@@ -122,7 +122,7 @@ Here the code:
         }
     };
 
-    /// Will generate the main function.
+    /// Helper function to generate the main function.
     OSRE_MAIN(HelloWorldApp)
 
 ::
