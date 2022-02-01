@@ -37,10 +37,7 @@ Here the code:
 
 ::
 
-    #include <osre/App/AppBase.h>
-    #include <osre/App/Component.h>
-    #include <osre/App/Entity.h>
-    #include <osre/App/World.h>
+    #include <osre/App/App.h>
     #include <osre/Common/Logger.h>
     #include <osre/RenderBackend/RenderBackendService.h>
     #include <osre/Scene/MeshBuilder.h>
@@ -56,13 +53,15 @@ Here the code:
     // To identify local log entries we will define this tag.
     static const c8 *Tag = "HelloWorldApp";
 
+    ///
     /// The example application, will create the render environment and render a simple triangle onto it
-    class HelloWorldApp : public App::AppBase {
+    ///
+    class HelloWorldApp : public AppBase {
         /// The transform block, contains the model-, view- and projection-matrix
         TransformMatrixBlock m_transformMatrix;
         /// The entity to render
         Entity *mEntity;
-        /// 
+        /// The keyboard controller to rotate the triangle
         Scene::AnimationControllerBase *mKeyboardTransCtrl;
 
     public:
@@ -83,6 +82,7 @@ Here the code:
     protected:
         bool onCreate() override {
             if (!AppBase::onCreate()) {
+	        osre_error(Tag, "Error while creating application basics.");
                 return false;
             }
 
