@@ -182,5 +182,7 @@ Define your own application class
 
 We want to create a triangle. And we want to rotate this with our keyboard. So we need an attribute from the type **TransformMatrixBlock** . This class
 provides a simple API to create a matrix with translation, scaling and rotating.
+
 To manage the triangle in our scene we need an attribute from type **Entity**.
+
 And last but not least we need an attribute to accss the keyboard input and control the animation of our triangle from the type **Scene::AnimationControllerBase**.
