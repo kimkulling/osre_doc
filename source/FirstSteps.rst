@@ -3,7 +3,7 @@ Write your first Hello-World-App
 ================================
 
 Prepare a workspace
--------------------
+===================
 To get started you need to create a folder for your app andd add a CMakeLists.txt file into it:
 
 ::
@@ -42,9 +42,6 @@ Here the code:
     #include <osre/RenderBackend/RenderBackendService.h>
     #include <osre/Scene/MeshBuilder.h>
     #include <osre/Scene/Camera.h>
-    #include <osre/Platform/AbstractWindow.h>
-    #include <glm/gtc/matrix_transform.hpp>
-    #include <glm/gtc/type_ptr.hpp>
 
     using namespace ::OSRE;
     using namespace ::OSRE::App;
@@ -126,3 +123,64 @@ Here the code:
     OSRE_MAIN(HelloWorldApp)
 
 ::
+
+Walkthrough
+===========
+Now let's take a deeper look what is going on in the code. We need to include some basic stuff for our first render-experiment.
+
+Lets start with the headers:
+----------------------------
+::
+
+    #include <osre/App/App.h>
+    #include <osre/Common/Logger.h>
+    #include <osre/RenderBackend/RenderBackendService.h>
+    #include <osre/Scene/MeshBuilder.h>
+    #include <osre/Scene/Camera.h>
+
+::
+
+To initialize the OSRE-rendersystem you can use the AppBase class. By including **App/App.h** the class and all dependencies will be included.
+
+To make your application more verbose we want to log some messages. This is the reason to use the **Common/Logger.h** header. 
+
+We want to render a single triangle. The **RenderBackend/RenderBackendService.h** will provide the API to add triangles. **Scene/MeshBuilder.h** offers
+you a simple way to create triangle. So we need this include as well. 
+
+And we want to look onto the scene. **Scene/Camera.h** provides an inferface for that.
+
+Define your own application class
+---------------------------------
+
+::
+
+    class HelloWorldApp : public AppBase {
+        /// The transform block, contains the model-, view- and projection-matrix
+        TransformMatrixBlock m_transformMatrix;
+        /// The entity to render
+        Entity *mEntity;
+        /// The keyboard controller to rotate the triangle
+        Scene::AnimationControllerBase *mKeyboardTransCtrl;
+
+    public:
+        /// The class constructor with the incoming arguments from the command line.
+        HelloWorldApp(int argc, char *argv[]) :
+                AppBase(argc, (const char **)argv),
+                m_transformMatrix(),
+                mEntity(nullptr),
+                mKeyboardTransCtrl(nullptr) {
+            // empty
+        }
+
+        /// The class destructor.
+        ~HelloWorldApp() override {
+            // empty
+        }
+    ...
+
+::
+
+We want to create a triangle. And we want to rotate this with our keyboard. So we need an attribute from the type **TransformMatrixBlock** . This class
+provides a simple API to create a matrix with translation, scaling and rotating.
+To manage the triangle in our scene we need an attribute from type **Entity**.
+And last but not least we need an attribute to accss the keyboard input and control the animation of our triangle from the type **Scene::AnimationControllerBase**.
