@@ -6,7 +6,7 @@ Build
 
 Installation Prerequisites
 --------------------------
-At first you have to install the following packages:
+At first, you have to install the following packages:
  * git
  * CMake Version 3.10 or higher
  * For Windows: Visual-Studio 2017 or 2019
@@ -23,7 +23,7 @@ Build for Windows
    
    > cmake CMakeLists.txt
    
-   - If you want to use a different environment like eclipe or CLion you can generate them as well:
+   - If you want to use a different environment like *Eclipe* or *CLion* you can generate them as well:
      > cmake CMakeLists.txt -G <Your IDE> 
    - You can get the list of generators via:
      > cmake --help
