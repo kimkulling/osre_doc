@@ -17,11 +17,12 @@ Build for Windows
  * Open a command-prompt
  * Checkout the code via::
  
-   > git clone https://github.com/kimkulling/osre.git
+   > git clone --recursive https://github.com/kimkulling/osre.git
+
  * Navigate into your folder which contains the OSRE-Repository 
  * We are using a cmake-based build to generate the build files. to generate your project-files for your Build Environment via::
    
-   > cmake CMakeLists.txt
+   > cmake CMakeLists.txt --preset=default
    
    - If you want to use a different environment like *Eclipe* or *CLion* you can generate them as well:
      > cmake CMakeLists.txt -G <Your IDE> 
