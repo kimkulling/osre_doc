@@ -14,6 +14,7 @@ The OSRE-Documentation
    Introduction
    Build
    FirstSteps
+   coding_conventions
    PlatformAbstraction
    EventSystem
    RenderSystem
