@@ -4,6 +4,28 @@
 Coding conventions
 ================================
 
+CMake Rules
+===========
+
+Used C++ Rules
+==============
+The C++17 standard shall be used to write the code. 
+There are not so much important rule to keep in mind. Lets take a look onto them
+
+Place curly brackets on the sam line as the declaration:
+
+::
+  struct Foo {
+  };
+::
+
+Class delarations shall be big and in camel-case format:
+
+::
+  Class Foo {
+  };
+::
+
 How to document the code
 ========================
 ::
