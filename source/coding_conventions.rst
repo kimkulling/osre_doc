@@ -1,3 +1,5 @@
+.. _osre_Coding_Conventions_cpp:
+
 ================================
 Coding conventions
 ================================
