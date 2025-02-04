@@ -10,7 +10,7 @@ At first, you have to install the following packages:
  * git
  * CMake Version 3.10 or higher
  * For Windows: Visual-Studio 2017 or 2019
- * For Linux: gcc or clang
+ * For Linux: g++ or clang++
 
 Build for Windows
 -----------------
@@ -19,8 +19,8 @@ Build for Windows
  
    > git clone --recursive https://github.com/kimkulling/osre.git
 
- * Navigate into your folder which contains the OSRE-Repository 
- * We are using a cmake-based build to generate the build files. to generate your project-files for your Build Environment via::
+ * Navigate into your OSRE-folder
+ * We are using a cmake-based build to generate the build files. You can generate a it via::
    
    > cmake CMakeLists.txt --preset=default
    
